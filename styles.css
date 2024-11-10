@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    font-family: Inter;
-    
+@import url('https://fonts.cdnfonts.com/css/miama');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #D8D8D8;
 }
+
+body {
+    font-family: Inter;
+    background-color: black;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(180deg, #000000, #1a1a1a);
+    padding: 20px 40px;
+    position: relative;
+   
+}
+
 
 /* shared-styels */
 
@@ -11,11 +29,13 @@
     display: flex;
 }
 .btn-primary {
-     background: rgb(230, 83, 60);
+     background: rgb(230, 83, 60) !important;
      border-radius: 42px;
+     border: none !important;
 }
 
 /* navigation-styles */
+
 .nav-title{
     font-weight: 800;
     font-size: 2.25rem;
@@ -25,16 +45,19 @@
     justify-content: space-between;
     align-items: center;
     margin: 57px 13% 96px 13%;
+    
 }
 
 .nav-items{
     justify-content: space-between;
     align-items: center;
     gap: 47px;
+    
 }
 
 nav > ul > li{
     list-style: none;
+    cursor: pointer;
     
 }
 .img{
@@ -43,26 +66,382 @@ nav > ul > li{
 
 .nav-item{
     padding: 20px;
+    
 }
 
 
 
+/* Hero Section */
+.hero {
+    margin: 57px 13% 96px 13%;
+   
+     
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.hero-title h2 {
+    font-size: 4.875rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.miama {   
+    font-family: miama;
+    font-weight: 400;
+    font-size: 4.875rem;
+}
+.hero-title{
+    width: 36.2%;
+    height: 440px;
+}
+.hero-title p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 28px 0px;
+}
 
 
+.hero-buttons button {
+    background: transparent;
+    padding: 16px 40px;
+    border: 1px solid white;
+    border-radius: 42px;
+    cursor: pointer;
+    margin-right: 14px;
+    
+}
+.hero-buttons{
+    display: flex;
+}
+.video-tutorial{
+    width: 24.23%;
+    height: auto;
+    margin-right: 14.86%;
+}
+.workout{
+    position: absolute;
+padding: 17px 24px;
+left: 1100px;
+top: 372px;
+color: rgba(255, 255, 255, 0.65);
+box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+}
+.workout h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.workout p{
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Inter;
+    font-size: 0.815rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+.vdo{
+    position: absolute;
+    left: 800px;
+    top: 650px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px 20px 20px 20px;
+
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
 
 
+}
+.vdo h1{
+    color: rgb(250, 250, 249);
+font-family: Inter;
+font-size: 1.5rem;
+font-weight: 900;
+line-height: 24px;
+letter-spacing: 0.3px;
 
+}
 
+/* Habits Section */
 
+.habits {
+    margin: 100px 13%;
+    text-align: center;
 
-@media screen and (max-width:576px){
-    .nav-items{
-        display: none;
-        
-    }
-    .img{
-        display: block;
-        color: wheat;
-    }
+}
 
+.habits h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.habits p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.875rem;
+    margin-bottom: 58px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+.habit-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.habit-icons img{
+    border-radius: 100%;
+}
+.habit-icons h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.habit-icons p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+.habit-icons div {
+    background: black;
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+}
+
+/* Extra Mile Section */
+.extra-mile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41px 32px 40px 54px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    color: #FFFFFF;
+    margin: 0px 13% 100px 13%;
+}
+.extra-heading{
+    width: 42%;
+}
+.extra-img{
+    width: 35%;
+}
+.extra-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+.extra-mile h2 {
+    
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 14px;
+}
+.extra-mile p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+
+.extra-mile button {
+    padding: 16px 40px;
+    border-radius: 42px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+/* Trainings and Exercises Section */
+.training {
+    margin: 0px 13% 88px 13%;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.training h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.exercise-grid div {
+    background: #333333;
+    padding: 60px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+/* BMI Calculator Section */
+.bmi-calculator {
+    padding: 60px 40px;
+    background-color: #222222;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 60px; /* Adds space below the BMI calculator section */
+}
+
+.bmi-calculator h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.bmi-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.bmi-chart {
+    background: #333333;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.bmi-chart h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bmi-chart ul {
+    list-style: none;
+    color: #CCCCCC;
+    padding: 0; /* Removes default padding */
+}
+
+.bmi-form {
+    width: 40%;
+}
+
+.bmi-form h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bmi-form input, .bmi-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.bmi-form button {
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Team Section */
+.team {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+    margin-bottom: 60px; /* Adds space below the team section */
+}
+
+.team h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.team-grid div {
+    background: #333333;
+    padding: 20px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background: #333333;
+    padding: 40px;
+    text-align: center;
+    color: #CCCCCC;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: #FF5A5F;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links div {
+    color: #CCCCCC;
+}
+
+.footer-links h3 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    color: #CCCCCC;
+    padding: 0; /* Removes default padding */
+}
+
+.footer-links ul li a {
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 20px;
 }
