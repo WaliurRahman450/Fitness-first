@@ -289,30 +289,79 @@ letter-spacing: 0.3px;
 }
 
 .training h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    line-height: 120%;
+    text-align: left;
+    margin-bottom: 14px;
 }
-
+.training p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+    margin-bottom: 58px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
 .exercise-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    
 }
 
 .exercise-grid div {
     background: #333333;
-    padding: 60px;
+    padding: 0px;
     color: #FFFFFF;
     border-radius: 5px;
 }
-
+.exercise-grid div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-container{
+    position: relative;
+}
+.cover{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    text-align: center;
+    
+}
 /* BMI Calculator Section */
+.bmi-header{
+    margin: 88px 26.70%;
+}
+.bmi-header h2{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 14px;
+}
+.bmi-header p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
 .bmi-calculator {
-    padding: 60px 40px;
+    padding: 49px 189px 52px 189px;
     background-color: #222222;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 60px; /* Adds space below the BMI calculator section */
 }
 
 .bmi-calculator h2 {
@@ -322,26 +371,53 @@ letter-spacing: 0.3px;
 
 .bmi-content {
     display: flex;
-    justify-content: space-around;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 175px;
 }
 
 .bmi-chart {
-    background: #333333;
-    padding: 20px;
+   
     border-radius: 5px;
     width: 40%;
 }
 
 .bmi-chart h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 52px;
 }
 
 .bmi-chart ul {
     list-style: none;
-    color: #CCCCCC;
-    padding: 0; /* Removes default padding */
+   
+   
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    
+    
+}
+
+.bmi-chart ul li {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 41px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.chart{
+    display: flex;
+   justify-content: center;
+}
+.font{
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    line-height: 120% !important;
+    letter-spacing: 0% !important;
+    color: white !important;
 }
 
 .bmi-form {
@@ -349,27 +425,51 @@ letter-spacing: 0.3px;
 }
 
 .bmi-form h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 14px;
+}
+.bmi-form p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-bottom: 34px;
+}
 .bmi-form input, .bmi-form select {
     width: 100%;
-    padding: 10px;
+    padding: 12px 40px 12px 20px;
     margin: 10px 0;
     border: none;
-    border-radius: 5px;
-}
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
 
+}
+.bmi-form ::placeholder, .bmi-form select{
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+}
 .bmi-form button {
-    background-color: #FF5A5F;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    
+    padding: 16px 40px;
+    border-radius: 42px;
     cursor: pointer;
-    font-weight: bold;
-    width: 100%;
+    margin-top: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* Team Section */
